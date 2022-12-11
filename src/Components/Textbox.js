@@ -56,10 +56,10 @@ export default function Textbox(props) {
             <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark'?'#e41010':'white',color: props.mode === 'dark'?'white':'black'}}></textarea>
         </div>
         <button disabled = {text.length===0} className={`btn btn-${props.mode==='light'?'primary':'warning'} mx-2 my-2`} onClick={handleUpCLick}>
-            Covert toUpperCase
+            Convert toUpperCase
         </button>
         <button disabled = {text.length===0} className={`btn btn-${props.mode==='light'?'primary':'warning'} mx-2 my-2`} onClick={handleLowerCLick}>
-            Covert toLowerCase
+            Convert toLowerCase
         </button>
 
         <button disabled = {text.length===0} className={`btn btn-${props.mode==='light'?'primary':'warning'} mx-2 my-2`} onClick={handleCopy}>
